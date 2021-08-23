@@ -1,0 +1,8 @@
+#!/bin/bash 
+
+cp ~/dwm/config.def.h ~/dwm/config.h
+if [ $PWD != $HOME/dwm ]
+then 
+	cd ~/dwm
+fi
+sudo make clean install
